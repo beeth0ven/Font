@@ -14,6 +14,7 @@
 		45199EE91DE8201200846954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45199EE71DE8201200846954 /* LaunchScreen.storyboard */; };
 		45199F371DE9635800846954 /* InsetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F361DE9635800846954 /* InsetsViewController.swift */; };
 		45199F391DE972D900846954 /* CustomSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F381DE972D900846954 /* CustomSizeViewController.swift */; };
+		45AD5CE81DE9868F00E02662 /* FlatColorsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD5CE71DE9868F00E02662 /* FlatColorsTableViewController.swift */; };
 		D3DAD83E2AC96EAA419B48CE /* Pods_Font.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FEAFC85AE4CC06D2D96D46 /* Pods_Font.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		45199F331DE941F900846954 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		45199F361DE9635800846954 /* InsetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetsViewController.swift; sourceTree = "<group>"; };
 		45199F381DE972D900846954 /* CustomSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSizeViewController.swift; sourceTree = "<group>"; };
+		45AD5CE71DE9868F00E02662 /* FlatColorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColorsTableViewController.swift; sourceTree = "<group>"; };
 		6960C12AEDD5A5E2C1D72F67 /* Pods-Font.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Font.release.xcconfig"; path = "Pods/Target Support Files/Pods-Font/Pods-Font.release.xcconfig"; sourceTree = "<group>"; };
 		9ACFF218E1271F240114B130 /* Pods-Font.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Font.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Font/Pods-Font.debug.xcconfig"; sourceTree = "<group>"; };
 		B0FEAFC85AE4CC06D2D96D46 /* Pods_Font.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Font.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,6 +109,7 @@
 				45199EE01DE8201200846954 /* ViewController.swift */,
 				45199F361DE9635800846954 /* InsetsViewController.swift */,
 				45199F381DE972D900846954 /* CustomSizeViewController.swift */,
+				45AD5CE71DE9868F00E02662 /* FlatColorsTableViewController.swift */,
 			);
 			name = Storyboard;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				45199F371DE9635800846954 /* InsetsViewController.swift in Sources */,
 				45199EE11DE8201200846954 /* ViewController.swift in Sources */,
 				45199F391DE972D900846954 /* CustomSizeViewController.swift in Sources */,
+				45AD5CE81DE9868F00E02662 /* FlatColorsTableViewController.swift in Sources */,
 				45199EDF1DE8201200846954 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
