@@ -12,19 +12,8 @@
 		45199EE41DE8201200846954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45199EE21DE8201200846954 /* Main.storyboard */; };
 		45199EE61DE8201200846954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45199EE51DE8201200846954 /* Assets.xcassets */; };
 		45199EE91DE8201200846954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45199EE71DE8201200846954 /* LaunchScreen.storyboard */; };
-		45199EF61DE92B4200846954 /* Font.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45199EF41DE92B4200846954 /* Font.xcdatamodeld */; };
-		45199EFD1DE92D2900846954 /* Color+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EF71DE92D2900846954 /* Color+CoreDataClass.swift */; };
-		45199EFE1DE92D2900846954 /* Color+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EF81DE92D2900846954 /* Color+CoreDataProperties.swift */; };
-		45199EFF1DE92D2900846954 /* Font+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EF91DE92D2900846954 /* Font+CoreDataClass.swift */; };
-		45199F001DE92D2900846954 /* Font+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EFA1DE92D2900846954 /* Font+CoreDataProperties.swift */; };
-		45199F011DE92D2900846954 /* Application+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EFB1DE92D2900846954 /* Application+CoreDataClass.swift */; };
-		45199F021DE92D2900846954 /* Application+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199EFC1DE92D2900846954 /* Application+CoreDataProperties.swift */; };
-		45199F041DE92DBA00846954 /* CoreDataStack+Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F031DE92DBA00846954 /* CoreDataStack+Font.swift */; };
-		45199F061DE9345900846954 /* AddAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F051DE9345900846954 /* AddAppViewController.swift */; };
-		45199F081DE936D700846954 /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F071DE936D700846954 /* AppsTableViewController.swift */; };
-		45199F0B1DE937FF00846954 /* ManagedObject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F091DE937FF00846954 /* ManagedObject+CoreDataClass.swift */; };
-		45199F0C1DE937FF00846954 /* ManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F0A1DE937FF00846954 /* ManagedObject+CoreDataProperties.swift */; };
-		45199F351DE9424800846954 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F341DE9424800846954 /* AppDetailViewController.swift */; };
+		45199F371DE9635800846954 /* InsetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F361DE9635800846954 /* InsetsViewController.swift */; };
+		45199F391DE972D900846954 /* CustomSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45199F381DE972D900846954 /* CustomSizeViewController.swift */; };
 		D3DAD83E2AC96EAA419B48CE /* Pods_Font.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FEAFC85AE4CC06D2D96D46 /* Pods_Font.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,21 +25,10 @@
 		45199EE51DE8201200846954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45199EE81DE8201200846954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45199EEA1DE8201200846954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45199EF51DE92B4200846954 /* Font.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Font.xcdatamodel; sourceTree = "<group>"; };
-		45199EF71DE92D2900846954 /* Color+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataClass.swift"; sourceTree = "<group>"; };
-		45199EF81DE92D2900846954 /* Color+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		45199EF91DE92D2900846954 /* Font+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+CoreDataClass.swift"; sourceTree = "<group>"; };
-		45199EFA1DE92D2900846954 /* Font+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		45199EFB1DE92D2900846954 /* Application+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+CoreDataClass.swift"; sourceTree = "<group>"; };
-		45199EFC1DE92D2900846954 /* Application+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Application+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		45199F031DE92DBA00846954 /* CoreDataStack+Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CoreDataStack+Font.swift"; sourceTree = "<group>"; };
-		45199F051DE9345900846954 /* AddAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAppViewController.swift; sourceTree = "<group>"; };
-		45199F071DE936D700846954 /* AppsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
-		45199F091DE937FF00846954 /* ManagedObject+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObject+CoreDataClass.swift"; sourceTree = "<group>"; };
-		45199F0A1DE937FF00846954 /* ManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		45199F321DE941F900846954 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		45199F331DE941F900846954 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		45199F341DE9424800846954 /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		45199F361DE9635800846954 /* InsetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetsViewController.swift; sourceTree = "<group>"; };
+		45199F381DE972D900846954 /* CustomSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSizeViewController.swift; sourceTree = "<group>"; };
 		6960C12AEDD5A5E2C1D72F67 /* Pods-Font.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Font.release.xcconfig"; path = "Pods/Target Support Files/Pods-Font/Pods-Font.release.xcconfig"; sourceTree = "<group>"; };
 		9ACFF218E1271F240114B130 /* Pods-Font.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Font.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Font/Pods-Font.debug.xcconfig"; sourceTree = "<group>"; };
 		B0FEAFC85AE4CC06D2D96D46 /* Pods_Font.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Font.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +75,6 @@
 		45199EDD1DE8201200846954 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				45199EF31DE92B1900846954 /* Model */,
 				45199EF21DE92B1300846954 /* Storyboard */,
 				45199EF11DE92AFB00846954 /* Framework+ */,
 				45199EF01DE92ACF00846954 /* SupportingFiles */,
@@ -127,29 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				45199EE21DE8201200846954 /* Main.storyboard */,
-				45199F071DE936D700846954 /* AppsTableViewController.swift */,
-				45199F051DE9345900846954 /* AddAppViewController.swift */,
-				45199F341DE9424800846954 /* AppDetailViewController.swift */,
 				45199EE01DE8201200846954 /* ViewController.swift */,
+				45199F361DE9635800846954 /* InsetsViewController.swift */,
+				45199F381DE972D900846954 /* CustomSizeViewController.swift */,
 			);
 			name = Storyboard;
-			sourceTree = "<group>";
-		};
-		45199EF31DE92B1900846954 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				45199F0A1DE937FF00846954 /* ManagedObject+CoreDataProperties.swift */,
-				45199EFC1DE92D2900846954 /* Application+CoreDataProperties.swift */,
-				45199EF81DE92D2900846954 /* Color+CoreDataProperties.swift */,
-				45199EFA1DE92D2900846954 /* Font+CoreDataProperties.swift */,
-				45199EF41DE92B4200846954 /* Font.xcdatamodeld */,
-				45199F031DE92DBA00846954 /* CoreDataStack+Font.swift */,
-				45199F091DE937FF00846954 /* ManagedObject+CoreDataClass.swift */,
-				45199EFB1DE92D2900846954 /* Application+CoreDataClass.swift */,
-				45199EF71DE92D2900846954 /* Color+CoreDataClass.swift */,
-				45199EF91DE92D2900846954 /* Font+CoreDataClass.swift */,
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 		C3D39E3E29714C7E6F12ECC5 /* Pods */ = {
@@ -284,21 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45199F061DE9345900846954 /* AddAppViewController.swift in Sources */,
-				45199F0B1DE937FF00846954 /* ManagedObject+CoreDataClass.swift in Sources */,
-				45199EFF1DE92D2900846954 /* Font+CoreDataClass.swift in Sources */,
+				45199F371DE9635800846954 /* InsetsViewController.swift in Sources */,
 				45199EE11DE8201200846954 /* ViewController.swift in Sources */,
-				45199F0C1DE937FF00846954 /* ManagedObject+CoreDataProperties.swift in Sources */,
-				45199F011DE92D2900846954 /* Application+CoreDataClass.swift in Sources */,
-				45199F351DE9424800846954 /* AppDetailViewController.swift in Sources */,
-				45199F001DE92D2900846954 /* Font+CoreDataProperties.swift in Sources */,
-				45199F041DE92DBA00846954 /* CoreDataStack+Font.swift in Sources */,
+				45199F391DE972D900846954 /* CustomSizeViewController.swift in Sources */,
 				45199EDF1DE8201200846954 /* AppDelegate.swift in Sources */,
-				45199F081DE936D700846954 /* AppsTableViewController.swift in Sources */,
-				45199EF61DE92B4200846954 /* Font.xcdatamodeld in Sources */,
-				45199EFE1DE92D2900846954 /* Color+CoreDataProperties.swift in Sources */,
-				45199F021DE92D2900846954 /* Application+CoreDataProperties.swift in Sources */,
-				45199EFD1DE92D2900846954 /* Color+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,19 +419,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		45199EF41DE92B4200846954 /* Font.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				45199EF51DE92B4200846954 /* Font.xcdatamodel */,
-			);
-			currentVersion = 45199EF51DE92B4200846954 /* Font.xcdatamodel */;
-			path = Font.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 45199ED31DE8201200846954 /* Project object */;
 }
