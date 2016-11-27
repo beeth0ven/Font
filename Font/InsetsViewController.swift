@@ -68,7 +68,6 @@ class InsetsViewController: UIViewController {
         }
         
         
-        
         insetsTop.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.topTextField.text = Int($1).description }
         
@@ -86,6 +85,30 @@ class InsetsViewController: UIViewController {
         
         insetsVertically.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.verticallyTextField.text = Int($1).description }
+    }
+    
+    @IBAction func didPanTop(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsTop.value += translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanLeft(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsLeft.value += translation.x
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanBottom(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsBottom.value -= translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanRight(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsRight.value -= translation.x
+        sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanTopLeft(_ sender: UIPanGestureRecognizer) {

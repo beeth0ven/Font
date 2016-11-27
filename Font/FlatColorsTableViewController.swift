@@ -17,8 +17,8 @@ class FlatColorsTableViewController: UITableViewController {
     typealias ColorInfo = (color: UIColor, name: String, hex: String)
     
     private let colorInfos: [ColorInfo] = [
-        (.flatPowerBlueLight, "深蓝(浅) flatPowerBlueLight", "ABBAF2"),
-        (.flatPowerBlueDark, "深蓝(深) flatPowerBlueDark", "8898D0"),
+        (.flatPowerBlueLight, "蔚蓝(浅) flatPowerBlueLight", "ABBAF2"),
+        (.flatPowerBlueDark, "蔚蓝(深) flatPowerBlueDark", "8898D0"),
         (.flatSkyBlueLight, "天蓝(浅) flatSkyBlueLight", "3182D9"),
         (.flatSkyBlueDark, "天蓝(深) flatSkyBlueDark", "2769B0"),
         (.flatBlueLight, "蓝(浅) flatBlueLight", "404E95"),
@@ -26,7 +26,7 @@ class FlatColorsTableViewController: UITableViewController {
         (.flatPurpleLight, "紫(浅) flatPurpleLight", "5F42C0"),
         (.flatPurpleDark, "紫(深) flatPurpleDark", "472F97"),
         (.flatMagentaLight, "洋红(浅) flatMagentaLight", "853DAE"),
-        (.flatMagentaDark, "洋红(浅) flatMagentaDark", "7728A4"),
+        (.flatMagentaDark, "洋红(深) flatMagentaDark", "7728A4"),
         (.flatPinkLight, "粉(浅) flatPinkLight", "E960BB"),
         (.flatPinkDark, "粉(深) flatPinkDark", "C34291"),
         (.flatWatermolonLight, "西瓜(浅) flatWatermolonLight", "E35A66"),
