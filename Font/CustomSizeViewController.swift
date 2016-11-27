@@ -32,6 +32,8 @@ class CustomSizeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        // textField --> variable
+
         xTextField.rx.cgFloat.filterNil()
             --> variable { $0.x }
         
@@ -44,11 +46,8 @@ class CustomSizeViewController: UIViewController {
         heightTextField.rx.cgFloat.filterNil()
             --> variable { $0.height }
         
-        x.asDriver() --> binding { $0.xConstraint.constant = $1 }
-        y.asDriver() --> binding { $0.yConstraint.constant = $1 }
-        width.asDriver() --> binding { $0.widthConstraint.constant = $1 }
-        height.asDriver() --> binding { $0.heightConstraint.constant = $1 }
-        
+        // variable --> textField
+
         x.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.xTextField.text = Int($1).description }
         
@@ -60,8 +59,17 @@ class CustomSizeViewController: UIViewController {
         
         height.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.heightTextField.text = Int($1).description }
+        
+        // variable --> view
+
+        x.asDriver() --> binding { $0.xConstraint.constant = $1 }
+        y.asDriver() --> binding { $0.yConstraint.constant = $1 }
+        width.asDriver() --> binding { $0.widthConstraint.constant = $1 }
+        height.asDriver() --> binding { $0.heightConstraint.constant = $1 }
     }
     
+    // view --> variable
+
     @IBAction func didPanSampleView(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: sampleView)
         x.value += translation.x

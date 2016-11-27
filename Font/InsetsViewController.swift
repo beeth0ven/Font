@@ -38,6 +38,8 @@ class InsetsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // textField --> variable
+        
         topTextField.rx.cgFloat.filterNil()
             --> variable { $0.insetsTop }
         
@@ -55,18 +57,8 @@ class InsetsViewController: UIViewController {
         
         verticallyTextField.rx.cgFloat.filterNil()
             --> variable { $0.insetsVertically }
-
-        insetsTop.asDriver() --> binding { $0.topConstraint.constant = $1 }
-        insetsLeft.asDriver() --> binding { $0.leftConstraint.constant = $1 }
-        insetsBottom.asDriver() --> binding { $0.bottomConstraint.constant = $1 }
-        insetsRight.asDriver() --> binding { $0.rightConstraint.constant = $1 }
-        insetsVertically.asDriver() --> binding { $0.verticallyStackView.spacing = $1 }
-        insetsHorizontally.asDriver() --> binding { (selfvc, insetsHorizontally) in
-            selfvc.horizontallyStackViews.forEach {
-                $0.spacing = insetsHorizontally
-            }
-        }
         
+        // variable --> textField
         
         insetsTop.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.topTextField.text = Int($1).description }
@@ -85,8 +77,24 @@ class InsetsViewController: UIViewController {
         
         insetsVertically.asDriver().distinctUntilChanged().throttle(0.1)
             --> binding { $0.verticallyTextField.text = Int($1).description }
+        
+        // variable --> view
+
+        insetsTop.asDriver() --> binding { $0.topConstraint.constant = $1 }
+        insetsLeft.asDriver() --> binding { $0.leftConstraint.constant = $1 }
+        insetsBottom.asDriver() --> binding { $0.bottomConstraint.constant = $1 }
+        insetsRight.asDriver() --> binding { $0.rightConstraint.constant = $1 }
+        insetsVertically.asDriver() --> binding { $0.verticallyStackView.spacing = $1 }
+        insetsHorizontally.asDriver() --> binding { (selfvc, insetsHorizontally) in
+            selfvc.horizontallyStackViews.forEach {
+                $0.spacing = insetsHorizontally
+            }
+        }
+        
     }
     
+    // view --> variable
+
     @IBAction func didPanTop(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
         insetsTop.value += translation.y
