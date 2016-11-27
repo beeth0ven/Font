@@ -26,8 +26,6 @@
 		45199EE51DE8201200846954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45199EE81DE8201200846954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45199EEA1DE8201200846954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45199F321DE941F900846954 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
-		45199F331DE941F900846954 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		45199F361DE9635800846954 /* InsetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetsViewController.swift; sourceTree = "<group>"; };
 		45199F381DE972D900846954 /* CustomSizeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSizeViewController.swift; sourceTree = "<group>"; };
 		45AD5CE71DE9868F00E02662 /* FlatColorsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlatColorsTableViewController.swift; sourceTree = "<group>"; };
@@ -261,7 +259,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				45199EE31DE8201200846954 /* Base */,
-				45199F321DE941F900846954 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -270,7 +267,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				45199EE81DE8201200846954 /* Base */,
-				45199F331DE941F900846954 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";

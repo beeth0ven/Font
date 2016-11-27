@@ -26,6 +26,7 @@ class InsetsViewController: UIViewController {
     @IBOutlet private weak var verticallyTextField: RegularExpressionTextField!
     @IBOutlet private weak var verticallyStackView: UIStackView!
     @IBOutlet private var horizontallyStackViews: [UIStackView]!
+    @IBOutlet private weak var centerHandlerView: UIView!
     
     private let insetsTop = Variable<CGFloat>(8.0)
     private let insetsLeft = Variable<CGFloat>(8.0)
@@ -64,6 +65,70 @@ class InsetsViewController: UIViewController {
             selfvc.horizontallyStackViews.forEach {
                 $0.spacing = insetsHorizontally
             }
+        }
+        
+        
+        
+        insetsTop.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.topTextField.text = Int($1).description }
+        
+        insetsLeft.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.leftTextField.text = Int($1).description }
+        
+        insetsBottom.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.bottomTextField.text = Int($1).description }
+        
+        insetsRight.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.rightTextField.text = Int($1).description }
+        
+        insetsHorizontally.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.horizontallyTextField.text = Int($1).description }
+        
+        insetsVertically.asDriver().distinctUntilChanged().throttle(0.1)
+            --> binding { $0.verticallyTextField.text = Int($1).description }
+    }
+    
+    @IBAction func didPanTopLeft(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsLeft.value += translation.x
+        insetsTop.value += translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanTopRight(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsRight.value -= translation.x
+        insetsTop.value += translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanBottomLeft(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsLeft.value += translation.x
+        insetsBottom.value -= translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanBottomRight(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsRight.value -= translation.x
+        insetsBottom.value -= translation.y
+        sender.setTranslation(.zero, in: nil)
+    }
+    
+    @IBAction func didPanCenter(_ sender: UIPanGestureRecognizer) {
+        let translation = sender.translation(in: nil)
+        insetsHorizontally.value -= translation.x
+        insetsVertically.value -= translation.y
+        sender.setTranslation(.zero, in: nil)
+        
+        switch sender.state {
+        case .began:
+            centerHandlerView.alpha = 1
+        case .cancelled, .ended, .failed:
+            centerHandlerView.alpha = 0
+        default:
+            break
         }
     }
     

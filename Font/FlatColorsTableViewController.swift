@@ -80,7 +80,7 @@ class FlatColorsTableViewController: UITableViewController {
             cell.detailTextLabel?.text = colorInfo.hex
         }
         
-        sumLabel.text = "共 \(colorInfos.count) 种"
+        sumLabel.text = "  "
     }
 }
 
