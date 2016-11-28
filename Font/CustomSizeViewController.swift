@@ -24,14 +24,14 @@ class CustomSizeViewController: UIViewController {
     @IBOutlet private weak var heightTextField: RegularExpressionTextField!
     @IBOutlet private weak var sampleView: UIView!
     
-    private let x = Variable<CGFloat>(8.0)
-    private let y = Variable<CGFloat>(8.0)
-    private let width = Variable<CGFloat>(200)
-    private let height = Variable<CGFloat>(120)
+    private let x = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.x", default: 8)
+    private let y = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.y", default: 8)
+    private let width = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.width", default: 200)
+    private let height = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.height", default: 120)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+
         // textField <-> variable
         
         xTextField.rx.cgFloatValue <-> variable { $0.x }
@@ -51,15 +51,15 @@ class CustomSizeViewController: UIViewController {
 
     @IBAction func didPanSampleView(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: sampleView)
-        x.value += translation.x
-        y.value += translation.y
+        x.value = max(0, x.value + translation.x)
+        y.value = max(0, y.value + translation.y)
         sender.setTranslation(.zero, in: sampleView)
     }
     
     @IBAction func didPanHandler(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: sampleView)
-        width.value += translation.x
-        height.value += translation.y
+        width.value = max(0, width.value + translation.x)
+        height.value = max(0, height.value + translation.y)
         sender.setTranslation(.zero, in: sampleView)
     }
     

@@ -28,12 +28,12 @@ class InsetsViewController: UIViewController {
     @IBOutlet private var horizontallyStackViews: [UIStackView]!
     @IBOutlet private weak var centerHandlerView: UIView!
     
-    private let insetsTop = Variable<CGFloat>(8.0)
-    private let insetsLeft = Variable<CGFloat>(8.0)
-    private let insetsBottom = Variable<CGFloat>(8.0)
-    private let insetsRight = Variable<CGFloat>(8.0)
-    private let insetsHorizontally = Variable<CGFloat>(8.0)
-    private let insetsVertically = Variable<CGFloat>(8.0)
+    private let insetsTop = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsTop", default: 8)
+    private let insetsLeft = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsLeft", default: 8)
+    private let insetsBottom = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsBottom", default: 8)
+    private let insetsRight = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsRight", default: 8)
+    private let insetsHorizontally = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsHorizontally", default: 8)
+    private let insetsVertically = ComputedVariable<CGFloat>(userDefaultskey: "InsetsViewController.insetsVertically", default: 8)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,60 +65,60 @@ class InsetsViewController: UIViewController {
 
     @IBAction func didPanTop(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsTop.value += translation.y
+        insetsTop.value = max(0, insetsTop.value + translation.y)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanLeft(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsLeft.value += translation.x
+        insetsLeft.value = max(0, insetsLeft.value + translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanBottom(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsBottom.value -= translation.y
+        insetsBottom.value = max(0, insetsBottom.value - translation.y)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanRight(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsRight.value -= translation.x
+        insetsRight.value = max(0, insetsRight.value - translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanTopLeft(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsLeft.value += translation.x
-        insetsTop.value += translation.y
+        insetsTop.value = max(0, insetsTop.value + translation.y)
+        insetsLeft.value = max(0, insetsLeft.value + translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanTopRight(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsRight.value -= translation.x
-        insetsTop.value += translation.y
+        insetsTop.value = max(0, insetsTop.value + translation.y)
+        insetsRight.value = max(0, insetsRight.value - translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanBottomLeft(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsLeft.value += translation.x
-        insetsBottom.value -= translation.y
+        insetsBottom.value = max(0, insetsBottom.value - translation.y)
+        insetsLeft.value = max(0, insetsLeft.value + translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanBottomRight(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsRight.value -= translation.x
-        insetsBottom.value -= translation.y
+        insetsBottom.value = max(0, insetsBottom.value - translation.y)
+        insetsRight.value = max(0, insetsRight.value - translation.x)
         sender.setTranslation(.zero, in: nil)
     }
     
     @IBAction func didPanCenter(_ sender: UIPanGestureRecognizer) {
         let translation = sender.translation(in: nil)
-        insetsHorizontally.value -= translation.x
-        insetsVertically.value -= translation.y
+        insetsHorizontally.value = max(0, insetsHorizontally.value - translation.x)
+        insetsVertically.value = max(0, insetsVertically.value - translation.y)
         sender.setTranslation(.zero, in: nil)
         
         switch sender.state {
