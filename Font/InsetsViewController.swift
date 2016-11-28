@@ -37,46 +37,15 @@ class InsetsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        // textField <-> variable
         
-        // textField --> variable
-        
-        topTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsTop }
-        
-        leftTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsLeft }
-        
-        bottomTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsBottom }
-        
-        rightTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsRight }
-        
-        horizontallyTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsHorizontally }
-        
-        verticallyTextField.rx.cgFloat.filterNil()
-            --> variable { $0.insetsVertically }
-        
-        // variable --> textField
-        
-        insetsTop.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.topTextField.text = Int($1).description }
-        
-        insetsLeft.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.leftTextField.text = Int($1).description }
-        
-        insetsBottom.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.bottomTextField.text = Int($1).description }
-        
-        insetsRight.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.rightTextField.text = Int($1).description }
-        
-        insetsHorizontally.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.horizontallyTextField.text = Int($1).description }
-        
-        insetsVertically.asDriver().distinctUntilChanged().throttle(0.1)
-            --> binding { $0.verticallyTextField.text = Int($1).description }
+        topTextField.rx.cgFloatValue <-> variable { $0.insetsTop }
+        leftTextField.rx.cgFloatValue <-> variable { $0.insetsLeft }
+        bottomTextField.rx.cgFloatValue <-> variable { $0.insetsBottom }
+        rightTextField.rx.cgFloatValue <-> variable { $0.insetsRight }
+        horizontallyTextField.rx.cgFloatValue <-> variable { $0.insetsHorizontally }
+        verticallyTextField.rx.cgFloatValue <-> variable { $0.insetsVertically }
         
         // variable --> view
 
@@ -90,7 +59,6 @@ class InsetsViewController: UIViewController {
                 $0.spacing = insetsHorizontally
             }
         }
-        
     }
     
     // view --> variable
@@ -167,15 +135,4 @@ class InsetsViewController: UIViewController {
         view.endEditing(true)
     }
     
-}
-
-extension Reactive where Base: UITextField {
-    
-    /// Reactive wrapper for `text` property.
-    public var cgFloat: Observable<CGFloat?> {
-        return text.map {
-            $0.flatMap(Double.init)
-                .flatMap { CGFloat($0) }
-        }
-    }
 }
