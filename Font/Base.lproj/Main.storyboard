@@ -625,7 +625,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="snj-Wq-MOe">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="snj-Wq-MOe">
                                                 <rect key="frame" x="149.5" y="0.0" width="94" height="29"/>
                                             </stepper>
                                         </subviews>
@@ -675,184 +675,28 @@ CQ
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="演艺在线，领先的国内演艺服务行业">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="O2O">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="解决方案。">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -862,46 +706,7 @@ Cg
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -911,184 +716,28 @@ CQ
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="牛至网旗下团队全力打造的演艺服务者与需求者之间的交易平台。任何有能力提供演艺服务的企业或个人，都可以在平台上，提供自己能够提供的服务；任何对演艺服务有需求的企业或个人，都可以在平台上，找到自己需要的服务。目前，超过">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="1000">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="家专业演艺服务企业入驻，更多演艺服务类目逐步开放中。">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1098,184 +747,28 @@ Cgk
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="演艺在线平台对商户发布的演艺服务进行一对一审核，以保障">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="100%">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="真实演艺服务信息；对商户服务服务体验全程跟踪，向用户呈现买卖双方的真实评价，所见即所得；向用户提供了全面的第三方托管支付交易服务，买卖双方资金安全有保障；去除一切中间环节，让服务者直面消费者。">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1285,46 +778,7 @@ Cg
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment>
@@ -1334,92 +788,14 @@ CQ
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content="演艺在线，以建设中国第一的演艺服务交易平台为目标，以运行公平，开放，安全的演艺服务交易市场为己任，将持续向演艺服务供应商和需求者，提供优质的服务。">
                                         <attributes>
                                             <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name=".PingFangSC-Regular"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1865,7 +1241,7 @@ CQ
                                         <rect key="frame" x="0.0" y="201" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTr-ue-bLc" id="pux-vP-nai">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="边距，间距" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d7K-J0-h3P">
@@ -1889,7 +1265,7 @@ CQ
                                         <rect key="frame" x="0.0" y="245" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aE7-CD-fuY" id="Vuz-4B-uCP">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="自定义尺寸" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEx-4z-gon">
@@ -1917,7 +1293,7 @@ CQ
                                         <rect key="frame" x="0.0" y="346" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mGb-wW-d47" id="pHa-aG-GnI">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="扁平颜色" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Plv-0g-6fh">
