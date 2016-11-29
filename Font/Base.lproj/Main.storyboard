@@ -664,7 +664,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6AH-j5-gUt">
-                                <rect key="frame" x="16" y="176" width="343" height="483"/>
+                                <rect key="frame" x="8" y="176" width="359" height="483"/>
                                 <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <attributedString key="attributedText">
@@ -806,11 +806,11 @@ CQ
                         <constraints>
                             <constraint firstItem="EtA-y7-XVC" firstAttribute="top" secondItem="bf7-0O-bWZ" secondAttribute="bottom" constant="15" id="026-Wl-6Nm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bf7-0O-bWZ" secondAttribute="trailing" id="5dm-vc-rMB"/>
+                            <constraint firstItem="6AH-j5-gUt" firstAttribute="leading" secondItem="K9S-WU-pmm" secondAttribute="leading" constant="8" id="HkO-ln-OVh"/>
                             <constraint firstItem="6AH-j5-gUt" firstAttribute="top" secondItem="EtA-y7-XVC" secondAttribute="bottom" constant="8" symbolic="YES" id="I2E-SD-VFS"/>
-                            <constraint firstItem="6AH-j5-gUt" firstAttribute="trailing" secondItem="K9S-WU-pmm" secondAttribute="trailingMargin" id="Iai-O9-ua0"/>
-                            <constraint firstItem="6AH-j5-gUt" firstAttribute="leading" secondItem="K9S-WU-pmm" secondAttribute="leadingMargin" id="NtN-ij-NWw"/>
                             <constraint firstItem="hMr-bJ-2tz" firstAttribute="top" secondItem="6AH-j5-gUt" secondAttribute="bottom" constant="8" symbolic="YES" id="QDe-gZ-61N"/>
                             <constraint firstAttribute="trailing" secondItem="EtA-y7-XVC" secondAttribute="trailing" id="QRp-iD-rrg"/>
+                            <constraint firstAttribute="trailing" secondItem="6AH-j5-gUt" secondAttribute="trailing" constant="8" id="cv6-3e-r7w"/>
                             <constraint firstItem="bf7-0O-bWZ" firstAttribute="leading" secondItem="K9S-WU-pmm" secondAttribute="leadingMargin" id="d6H-Rj-AE2"/>
                             <constraint firstItem="bf7-0O-bWZ" firstAttribute="top" secondItem="Xvk-XY-Let" secondAttribute="bottom" constant="15" id="v0M-Sg-yWH"/>
                             <constraint firstItem="EtA-y7-XVC" firstAttribute="leading" secondItem="K9S-WU-pmm" secondAttribute="leading" id="zrm-NH-kod"/>
@@ -1206,6 +1206,7 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="A7Q-Xi-mXX"/>
                                             <segue destination="nwp-fK-d97" kind="showDetail" id="JSe-6c-Gxs"/>
                                         </connections>
                                     </tableViewCell>
@@ -1230,6 +1231,7 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="7fl-jp-GFy"/>
                                             <segue destination="A7e-Cl-Z4k" kind="showDetail" id="t6c-Dm-4Om"/>
                                         </connections>
                                     </tableViewCell>
@@ -1258,6 +1260,7 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="ab7-PG-mam"/>
                                             <segue destination="6jZ-gf-c7T" kind="showDetail" id="bgU-LA-t63"/>
                                         </connections>
                                     </tableViewCell>
@@ -1282,6 +1285,7 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="n1V-hh-RVY"/>
                                             <segue destination="CdM-LC-RDb" kind="showDetail" id="Ugx-8Q-RaG"/>
                                         </connections>
                                     </tableViewCell>
@@ -1310,6 +1314,7 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="ylM-oR-Lmg"/>
                                             <segue destination="sR5-N3-26i" kind="showDetail" id="sNv-Wy-OH7"/>
                                         </connections>
                                     </tableViewCell>
@@ -1338,7 +1343,8 @@ CQ
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="rjS-nm-TxO" kind="show" id="sJm-yC-qmS"/>
+                                            <outlet property="selectedBackgroundView" destination="tqI-hL-jga" id="YpZ-2I-kL2"/>
+                                            <segue destination="rjS-nm-TxO" kind="showDetail" id="oYJ-Yg-7eM"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -1355,6 +1361,11 @@ CQ
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BoI-yv-mCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="tqI-hL-jga">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.9767052531" green="0.60546392199999999" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="374" y="123"/>
         </scene>
