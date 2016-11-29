@@ -40,12 +40,12 @@ class InsetsViewController: UIViewController {
 
         // textField <-> variable
         
-        topTextField.rx.cgFloatValue <-> variable { $0.insetsTop }
-        leftTextField.rx.cgFloatValue <-> variable { $0.insetsLeft }
-        bottomTextField.rx.cgFloatValue <-> variable { $0.insetsBottom }
-        rightTextField.rx.cgFloatValue <-> variable { $0.insetsRight }
-        horizontallyTextField.rx.cgFloatValue <-> variable { $0.insetsHorizontally }
-        verticallyTextField.rx.cgFloatValue <-> variable { $0.insetsVertically }
+        topTextField.rx.text.cgFloat <-> variable { $0.insetsTop }
+        leftTextField.rx.text.cgFloat <-> variable { $0.insetsLeft }
+        bottomTextField.rx.text.cgFloat <-> variable { $0.insetsBottom }
+        rightTextField.rx.text.cgFloat <-> variable { $0.insetsRight }
+        horizontallyTextField.rx.text.cgFloat <-> variable { $0.insetsHorizontally }
+        verticallyTextField.rx.text.cgFloat <-> variable { $0.insetsVertically }
         
         // variable --> view
 

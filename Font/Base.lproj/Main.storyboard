@@ -611,7 +611,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ON-ZS-kKN" customClass="RegularExpressionTextField" customModule="BNKit">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ON-ZS-kKN" customClass="RegularExpressionTextField" customModule="BNKit">
                                                         <rect key="frame" x="79.5" y="0.0" width="50" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="iHZ-OM-Dbr"/>
@@ -625,7 +625,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="snj-Wq-MOe">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minimumValue="10" maximumValue="24" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="snj-Wq-MOe">
                                                 <rect key="frame" x="149.5" y="0.0" width="94" height="29"/>
                                             </stepper>
                                         </subviews>
@@ -642,7 +642,7 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="200" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUY-jH-V1k" customClass="RegularExpressionTextField" customModule="BNKit">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUY-jH-V1k" customClass="RegularExpressionTextField" customModule="BNKit">
                                                         <rect key="frame" x="79.5" y="0.0" width="50" height="29"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="50" id="aNC-PP-uMH"/>
@@ -656,7 +656,7 @@
                                                     </textField>
                                                 </subviews>
                                             </stackView>
-                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="agd-fy-apC">
+                                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="24" stepValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="agd-fy-apC">
                                                 <rect key="frame" x="149.5" y="0.0" width="94" height="29"/>
                                             </stepper>
                                         </subviews>

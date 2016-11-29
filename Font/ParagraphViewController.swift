@@ -28,23 +28,18 @@ class ParagraphViewController: UIViewController {
         
         // textField <-> variable
         
-        fontSizeTextField.rx.cgFloatValue <-> variable { $0.fontSize }
-        verticallyTextField.rx.cgFloatValue <-> variable { $0.insetsVertically }
+        fontSizeTextField.rx.text.cgFloat <-> variable { $0.fontSize }
+        verticallyTextField.rx.text.cgFloat <-> variable { $0.insetsVertically }
+        
+        // variable <-> stepper
+
+        fontSizeStepper.rx.value.cgFloat <-> variable { $0.fontSize }
+        verticallyStepper.rx.value.cgFloat <-> variable { $0.insetsVertically }
         
         // variable --> view
         
         fontSize.asDriver() --> binding { $0.updateTextView(fontSize: $1) }
         insetsVertically.asDriver() --> binding { $0.updateTextView(insetsVertically: $1) }
-        
-        // variable --> stepper
-        
-        fontSize.asDriver() --> binding { $0.fontSizeStepper.value = Double($1) }
-        insetsVertically.asDriver() --> binding { $0.verticallyStepper.value = Double($1) }
-        
-        // stepper --> variable
-        
-        fontSizeStepper.rx.value --> binding { $0.fontSize.value = max(10, CGFloat($1)) }
-        verticallyStepper.rx.value --> binding { $0.insetsVertically.value = max(0, CGFloat($1)) }
     }
     
     // updateTextView

@@ -34,10 +34,10 @@ class CustomSizeViewController: UIViewController {
 
         // textField <-> variable
         
-        xTextField.rx.cgFloatValue <-> variable { $0.x }
-        yTextField.rx.cgFloatValue <-> variable { $0.y }
-        widthTextField.rx.cgFloatValue <-> variable { $0.width }
-        heightTextField.rx.cgFloatValue <-> variable { $0.height }
+        xTextField.rx.text.cgFloat <-> variable { $0.x }
+        yTextField.rx.text.cgFloat <-> variable { $0.y }
+        widthTextField.rx.text.cgFloat <-> variable { $0.width }
+        heightTextField.rx.text.cgFloat <-> variable { $0.height }
         
         // variable --> view
 
@@ -68,23 +68,32 @@ class CustomSizeViewController: UIViewController {
     }
 }
 
-extension Reactive where Base: UITextField {
+extension ControlPropertyType where E == String? {
     
-    /// Reactive wrapper for `text` property.
-    public var cgFloatValue: ControlProperty<CGFloat> {
-        
-        let getter = text.map { $0.flatMap(Double.init) }
+    public var cgFloat: ControlProperty<CGFloat> {
+        let getter = asControlProperty().map { $0.flatMap(Double.init) }
             .map { $0.flatMap { CGFloat.init($0) } }
             .filterNil()
             .distinctUntilChanged()
         
-        let setter = UIBindingObserver(UIElement: base) { (base, value: CGFloat) in
-            let text = Int(value).description
-            if base.text != text {
-                base.text = text
-            }
+        let setter = asControlProperty().mapObserver { (value: CGFloat) in
+            Int(value).description
         }
+        
         return ControlProperty(values: getter, valueSink: setter)
     }
-    
 }
+
+
+extension ControlPropertyType where E == Double {
+    
+    public var cgFloat: ControlProperty<CGFloat> {
+        return asControlProperty()
+            .map(
+                mapGetter: { CGFloat($0) },
+                mapSetter: Double.init
+        )
+    }
+}
+
+
