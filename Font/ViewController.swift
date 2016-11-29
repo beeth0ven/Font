@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import BNKit
 
-class ViewController: UIViewController {
-
+class MenuTableViewController: UITableViewController {
+    
+    @IBOutlet weak var versionLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        versionLabel.text = "版本 \(InfoPlist.appVersion)"
     }
-
+    
 }
 
 class FTSplitViewControllerT: UISplitViewController, UISplitViewControllerDelegate {
