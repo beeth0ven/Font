@@ -24,10 +24,10 @@ class CustomSizeViewController: UIViewController {
     @IBOutlet private weak var heightTextField: RegularExpressionTextField!
     @IBOutlet private weak var sampleView: UIView!
     
-    private let x = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.x", default: 8)
-    private let y = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.y", default: 8)
-    private let width = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.width", default: 200)
-    private let height = ComputedVariable<CGFloat>(userDefaultskey: "CustomSizeViewController.height", default: 120)
+    private let x = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.x", default: 8 as CGFloat)
+    private let y = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.y", default: 8 as CGFloat)
+    private let width = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.width", default: 200 as CGFloat)
+    private let height = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.height", default: 120 as CGFloat)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,8 +90,8 @@ extension ControlPropertyType where E == Double {
     public var cgFloat: ControlProperty<CGFloat> {
         return asControlProperty()
             .map(
-                mapGetter: { CGFloat($0) },
-                mapSetter: Double.init
+                onObservale: { CGFloat($0) },
+                onObserver: Double.init
         )
     }
 }
