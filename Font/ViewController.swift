@@ -21,7 +21,7 @@ class MenuTableViewController: UITableViewController {
     
 }
 
-class FTSplitViewControllerT: UISplitViewController, UISplitViewControllerDelegate {
+class FTSplitViewController: UISplitViewController, UISplitViewControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()

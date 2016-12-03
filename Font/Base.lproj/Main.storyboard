@@ -1136,10 +1136,10 @@ CQ
             </objects>
             <point key="canvasLocation" x="1950" y="-550"/>
         </scene>
-        <!--Split View ControllerT-->
+        <!--Split View Controller-->
         <scene sceneID="nlI-TA-LVG">
             <objects>
-                <splitViewController id="k1B-ng-aXJ" customClass="FTSplitViewControllerT" customModule="Font" customModuleProvider="target" sceneMemberID="viewController">
+                <splitViewController id="k1B-ng-aXJ" customClass="FTSplitViewController" customModule="Font" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="65W-n0-gzo" kind="relationship" relationship="masterViewController" id="YAW-9y-Nad"/>
                         <segue destination="sR5-N3-26i" kind="relationship" relationship="detailViewController" id="h6g-jp-LHe"/>
@@ -1487,7 +1487,7 @@ CQ
         <image name="system" width="16" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sNv-Wy-OH7"/>
+        <segue reference="h6g-jp-LHe"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.97670525312423706" green="0.60546392202377319" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>
