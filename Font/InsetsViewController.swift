@@ -28,12 +28,12 @@ class InsetsViewController: UIViewController {
     @IBOutlet private var horizontallyStackViews: [UIStackView]!
     @IBOutlet private weak var centerHandlerView: UIView!
     
-    private let insetsTop = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsTop", default: 8 as CGFloat)
-    private let insetsLeft = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsLeft", default: 8 as CGFloat)
-    private let insetsBottom = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsBottom", default: 8 as CGFloat)
-    private let insetsRight = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsRight", default: 8 as CGFloat)
-    private let insetsHorizontally = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsHorizontally", default: 8 as CGFloat)
-    private let insetsVertically = UserDefaults.standard.rx.value(forKey: "InsetsViewController.insetsVertically", default: 8 as CGFloat)
+    private let insetsTop = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsTop", default: 8 as CGFloat)
+    private let insetsLeft = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsLeft", default: 8 as CGFloat)
+    private let insetsBottom = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsBottom", default: 8 as CGFloat)
+    private let insetsRight = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsRight", default: 8 as CGFloat)
+    private let insetsHorizontally = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsHorizontally", default: 8 as CGFloat)
+    private let insetsVertically = UserDefaults.standard.rx.object(forKey: "InsetsViewController.insetsVertically", default: 8 as CGFloat)
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,8 +20,8 @@ class ParagraphViewController: UIViewController {
     
     @IBOutlet private weak var textView: UITextView!
     
-    private let fontSize = UserDefaults.standard.rx.value(forKey: "ParagraphViewController.fontSize", default: 14 as CGFloat)
-    private let insetsVertically = UserDefaults.standard.rx.value(forKey: "ParagraphViewController.insetsVertically", default: 8 as CGFloat)
+    private let fontSize = UserDefaults.standard.rx.object(forKey: "ParagraphViewController.fontSize", default: 14 as CGFloat)
+    private let insetsVertically = UserDefaults.standard.rx.object(forKey: "ParagraphViewController.insetsVertically", default: 8 as CGFloat)
     
     override func viewDidLoad() {
         super.viewDidLoad()

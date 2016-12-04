@@ -24,10 +24,10 @@ class CustomSizeViewController: UIViewController {
     @IBOutlet private weak var heightTextField: RegularExpressionTextField!
     @IBOutlet private weak var sampleView: UIView!
     
-    private let x = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.x", default: 8 as CGFloat)
-    private let y = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.y", default: 8 as CGFloat)
-    private let width = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.width", default: 200 as CGFloat)
-    private let height = UserDefaults.standard.rx.value(forKey: "CustomSizeViewController.height", default: 120 as CGFloat)
+    private let x = UserDefaults.standard.rx.object(forKey: "CustomSizeViewController.x", default: 8 as CGFloat)
+    private let y = UserDefaults.standard.rx.object(forKey: "CustomSizeViewController.y", default: 8 as CGFloat)
+    private let width = UserDefaults.standard.rx.object(forKey: "CustomSizeViewController.width", default: 200 as CGFloat)
+    private let height = UserDefaults.standard.rx.object(forKey: "CustomSizeViewController.height", default: 120 as CGFloat)
     
     override func viewDidLoad() {
         super.viewDidLoad()
